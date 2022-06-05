@@ -7,6 +7,11 @@
         <entry key="..\:/PROJECTS/Android/VKStories/app/src/main/res/layout/fragment_start.xml" value="0.371875" />
         <entry key="..\:/PROJECTS/Android/VKStories/app/src/main/res/layout/fragment_stories.xml" value="0.1" />
         <entry key="..\:/PROJECTS/Android/VKStories/app/src/main/res/layout/layout_stories.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/drawable/background_blur.xml" value="0.322" />
+        <entry key="app/src/main/res/drawable/background_button_link.xml" value="0.322" />
+        <entry key="app/src/main/res/drawable/background_story_place.xml" value="0.322" />
+        <entry key="app/src/main/res/drawable/background_story_title.xml" value="0.322" />
+        <entry key="app/src/main/res/layout/fragment_stories.xml" value="0.35625" />
       </map>
     </option>
   </component>

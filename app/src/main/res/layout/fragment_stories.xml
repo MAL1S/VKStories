@@ -8,13 +8,92 @@
 
     <!--below is the image view where we will
             be displaying images in our stories-->
+
+    <ImageView
+        android:id="@+id/image_blurry"
+        android:src="@drawable/img"
+        android:backgroundTint="#5e5f65"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@android:color/transparent"
         android:contentDescription="@null"
         tools:src="@drawable/img" />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/stories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/background_story_place"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            tools:text="New york, uSA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="9th of september"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_story_title"
+        android:orientation="vertical"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Description" />
+
+    </LinearLayout>
 
     <!--on below line we are creating
         linear layout for our views-->
@@ -43,6 +122,28 @@
             android:layout_weight="1" />
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_link"
+        app:layout_constraintEnd_toEndOf="@+id/btn_link"
+        app:layout_constraintStart_toStartOf="@+id/btn_link" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_link"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Подробнее"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!--below widget is use to create indicator for our stories at top-->
     <jp.shts.android.storiesprogressview.StoriesProgressView

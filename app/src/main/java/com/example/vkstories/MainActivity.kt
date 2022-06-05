@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // inside in create method below line is use to make a full screen.
-        // inside in create method below line is use to make a full screen.
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
     }
